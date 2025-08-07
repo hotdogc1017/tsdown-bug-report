@@ -1,0 +1,37 @@
+{
+  "name": "tsdown-starter-stackblitz",
+  "version": "0.0.0",
+  "packageManager": "pnpm@10.13.1",
+  "description": "tsdown starter for StackBlitz",
+  "type": "module",
+  "license": "MIT",
+  "author": "三咲智子 Kevin Deng <sxzz@sxzz.moe>",
+  "files": ["dist"],
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": "./dist/index.js",
+    "./package.json": "./package.json"
+  },
+  "scripts": {
+    "build:dts": "tsdown --dts",
+    "build": "tsdown",
+    "dev": "tsdown --watch"
+  },
+  "devDependencies": {
+    "tsdown": "latest",
+    "typescript": "^5.8.3",
+    "unplugin-vue": "latest"
+  },
+  "stackblitz": {
+    "installDependencies": false,
+    "startCommand": "pnpm i && pnpm build"
+  },
+  "resolutions": {
+    "rolldown": "npm:@rolldown/browser@latest"
+  },
+  "dependencies": {
+    "vue": "^3.5.18"
+  }
+}
