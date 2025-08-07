@@ -1,9 +1,9 @@
-<script setup>
-import { ref } from 'vue';
+<script setup lang="ts">
+import { ref } from "vue";
 
-const god = ref('sxzz yyds');
+const god = ref("sxzz yyds");
 </script>
 
 <template>
-  <h1>{{ god }}</h1>
+    <h1>{{ god }}</h1>
 </template>
